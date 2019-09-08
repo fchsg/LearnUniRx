@@ -4,3 +4,6 @@ LearnUniRx/.idea
 LearnUniRx/LearnUniRx.sln
 LearnUniRx/UniRx.csproj
 LearnUniRx/UniRx.Examples.csproj
+LearnUniRx/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll.meta
+LearnUniRx/Assets/Plugins/Editor/JetBrains.meta
+LearnUniRx/Assets/Plugins/Editor.meta
