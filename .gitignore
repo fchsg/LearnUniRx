@@ -1,4 +1,4 @@
-﻿LearnUniRx/Library
+LearnUniRx/Library
 LearnUniRx/Temp
 LearnUniRx/.idea
 LearnUniRx/LearnUniRx.sln
@@ -11,3 +11,5 @@ LearnUniRx/Assembly-CSharp.csproj
 LearnUniRx/UniRx.Async.csproj
 LearnUniRx/UniRx.Async.Editor.csproj
 LearnUniRx/Assets/Plugins/Editor/JetBrains
+LearnUniRx/obj
+LearnUniRx/Logs
