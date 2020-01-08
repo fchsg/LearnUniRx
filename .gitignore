@@ -13,3 +13,5 @@ LearnUniRx/UniRx.Async.Editor.csproj
 LearnUniRx/Assets/Plugins/Editor/JetBrains
 LearnUniRx/obj
 LearnUniRx/Logs
+LearnUniRx/Assembly-CSharp-Editor.csproj
+LearnUniRx/Assembly-CSharp-firstpass.csproj
