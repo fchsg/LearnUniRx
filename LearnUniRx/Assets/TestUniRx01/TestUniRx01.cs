@@ -5,9 +5,9 @@ using UniRx.Async;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Scenes.Scripts
+namespace TestUniRx01
 {
-    public class LoadResource : MonoBehaviour
+    public class TestUniRx01 : MonoBehaviour
     {
         public RawImage rawImage0;
         public RawImage rawImage1;
@@ -26,14 +26,14 @@ namespace Scenes.Scripts
             rawImage2.texture = text3;
         }
 
-        async UniTask<T> LoadPrefabFromResUniTask<T>(string assetName, bool isAsync = true) where T : UnityEngine.Object
+        private static async UniTask<T> LoadPrefabFromResUniTask<T>(string assetName, bool isAsync = true) where T : UnityEngine.Object
         {
             if (isAsync)
                 return await Resources.LoadAsync<T>(assetName) as T;
             return Resources.Load<T>(assetName);
         }
 
-        public IObservable<T> LoadPrefabFromResObservable<T>(string assetName, bool isAsync = true) where T : UnityEngine.Object
+        private static IObservable<T> LoadPrefabFromResObservable<T>(string assetName, bool isAsync = true) where T : UnityEngine.Object
         {
             if (isAsync)
                 return Resources.LoadAsync<T>(assetName)
@@ -49,7 +49,7 @@ namespace Scenes.Scripts
             var assetObj = default(T);
             if (isAsync)
             {
-                ResourceRequest req = Resources.LoadAsync<T>(assetName);
+                var req = Resources.LoadAsync<T>(assetName);
                 yield return req;
                 assetObj = req.asset as T;
             }
